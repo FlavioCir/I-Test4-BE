@@ -20,8 +20,10 @@ public class Dipendente {
 		this.jobTitle = Livello.OPERAIO;
 	}
 	
-	public Dipendente(int matricola, Livello jobTitle, Dipartimento jobArea) {
+	public Dipendente(int matricola, Livello jobTitle, Dipartimento jobArea, double importoOrarioStraordinario) {
 
+		this.importoOrarioStraordinario = importoOrarioStraordinario;
+		
 		this.matricola = matricola;
 		this.stipendio = stipendioBase;
 		this.jobTitle = jobTitle;
@@ -139,7 +141,7 @@ public class Dipendente {
 	}
 	
 	public double calcolaStipendioTotale(int a) {
-		return stipendio + (importoOrarioStraordinario * a);
+		return (stipendio + (importoOrarioStraordinario * a));
 	}
 	
 }
