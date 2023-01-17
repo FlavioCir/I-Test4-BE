@@ -18,6 +18,7 @@ public class Dipendente {
 		this.stipendio = stipendioBase;
 		this.importoOrarioStraordinario = 30;
 		this.jobTitle = Livello.OPERAIO;
+		
 	}
 	
 	public Dipendente(int matricola, Livello jobTitle, Dipartimento jobArea, double importoOrarioStraordinario) {
